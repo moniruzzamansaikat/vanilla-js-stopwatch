@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: hack;
+}
+
+body {
+  background-color: #ffea73;
+}
+
+/* custom selectors */
+.container {
+  width: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 10px;
+}
+h1 span.title {
+  color: rgb(136, 18, 18);
+}
+h1 span.subtitle {
+  font-size: 0.9rem;
+  font-style: italic;
+  opacity: 0.7;
+}
+h3.time {
+  color: #881212;
+}
+div.buttons {
+  display: flex;
+  justify-content: center;
+}
+.buttons button {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #881212;
+  color: #881212;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0px 5px 0px 0px #881212;
+  outline: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
